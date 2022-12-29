@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Quicksand;
+    src: url('assets/fonts/Quicksand.ttf');
+}
+@font-face {
+    font-family: Poppins;
+    src: url('assets/fonts/Poppins.ttf');
+}
+@font-face {
+    font-family: Futura;
+    src: url('assets/fonts/Futura.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #ffffff;
+   box-shadow: 0 2px 20px 1px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    margin: 10px;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(45deg, rgb(89, 0, 255), rgb(255, 0, 157));
+}
+
+@media(max-width: 380px) {
+    .menuBtnContainer span {
+        display: none;
+    }
+}
+
+.menuBtn {
+    margin: 10px;
+    border: none;
+    width: 38px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    font-size: 1.1em;
+    background-color: transparent;
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.menuBtn:active {
+    box-shadow: none;
+}
+@media(min-width: 768px) {
+    .menuBtn:hover {
+        color: #ffffff;
+        background-color: #445566;
+    }
+}
+
+/* SOCIAL PORTAL */
+.socialPortal {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    padding: 10px;
+}
+
+.socialPortal a {
+    font-size: 3em;
+    color: #000000;
+}
+.socialPortal a:hover {
+    color: rgb(47, 0, 255);
+}
+.socialPortal a:visited {
+    color: initial;
+}
+
+.socialPortal a:nth-child(2) {
+    color: rgb(0, 60, 255);
+}
+.socialPortal a:nth-child(3) {
+    color: rgb(0, 110, 255);
+}
+.socialPortal a:nth-child(4) {
+    color: rgb(3, 187, 43);
+}
+
+/* MAIN */
+/* PROFLE */
+.home .profile {
+    position: relative;
+    height: 20vh;
+    margin: 10px;
+    border-radius: 20px;
+    background-image: url(assets/images/home-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile h1 {
+    position: absolute;
+    bottom: -40px;
+    margin-left: 160px;
+    border-radius: 10px;
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.profile h2 {
+    position: absolute;
+    bottom: -60px;
+    margin-left: 160px;
+    font-size: 1em;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.profile img {
+    position: absolute;
+    bottom: -80px;
+    margin-left: 20px;
+    border: 10px solid #fff;
+    width: 8em;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+.home h3 {
+    margin-top: 100px;
+    text-align: center;
+    color: #abc;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
