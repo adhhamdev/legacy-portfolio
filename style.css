@@ -143,6 +143,23 @@ header {
 .home h3 {
     margin-top: 100px;
     text-align: center;
-    color: #abc;
+    color: #89a;
     font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+
+.home h3 i {
+    position: relative;
+    animation: float 1.5s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 12px;
+        opacity: .5;
+    }
+    100% {
+        top: 0;
+    }
 }
