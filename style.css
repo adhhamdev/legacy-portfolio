@@ -145,6 +145,7 @@ header {
     text-align: center;
     color: #89a;
     font-family: Quicksand, Arial, Helvetica, sans-serif;
+    animation: float 1.5s ease-in-out infinite;
 }
 
 .home h3 i {
@@ -162,4 +163,8 @@ header {
     100% {
         top: 0;
     }
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
