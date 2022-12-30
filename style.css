@@ -96,9 +96,9 @@ header {
 }
 
 .profile h2 {
-    top: 80px;
+    top: 70px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px 10px;
     font-size: 1em;
     background-image: linear-gradient(45deg, deepskyblue, darkblue, purple);
 }
@@ -123,7 +123,7 @@ header {
 
 .socialPortal a {
     margin: 0 8px;
-    font-size: 2.2em;
+    font-size: 2em;
 }
 
 .socialPortal a:nth-child(1) {
