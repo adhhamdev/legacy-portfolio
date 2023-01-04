@@ -19,6 +19,7 @@
 
 body {
     font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-display: swap;
 }
 
 /* HEADER */
@@ -141,14 +142,16 @@ header {
 }
 
 .home h3 {
+    will-change: contents;
     margin-top: 100px;
     text-align: center;
-    color: #89a;
+    color: #567;
     font-family: Quicksand, Arial, Helvetica, sans-serif;
     animation: float 1.5s ease-in-out infinite;
 }
 
 .home h3 i {
+    will-change: contents;
     position: relative;
     animation: float 1.5s ease-in-out infinite;
 }
@@ -158,7 +161,7 @@ header {
     }
     50% {
         top: 12px;
-        opacity: .5;
+        /* opacity: .5; */
     }
     100% {
         top: 0;
