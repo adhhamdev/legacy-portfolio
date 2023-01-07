@@ -210,8 +210,12 @@ header {
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 
+.tech_list figure {
+    text-align: center;
+}
+
 .tech_list img {
-    width: 90%;
+    width: 100%;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .3));
 }
 
