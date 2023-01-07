@@ -215,6 +215,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid;
 }
 
 .tech_list img {
