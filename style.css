@@ -206,12 +206,12 @@ header {
     grid-template-rows: 150px 150px 150px;
     place-content: center;
     gap: 15px;
-    background-image: linear-gradient(135deg, #fff 30%, #abc 30% 60%, #789 60% 90%);
+    background-image: linear-gradient(45deg, #123 30%, #456 31% 60%, #abc 61% 90%);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 .tech_list img {
-    width: 100%;
+    width: 90%;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .3));
 }
 
