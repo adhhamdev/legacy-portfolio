@@ -199,11 +199,11 @@ header {
 
 .tech_list {
     margin: 30px 10px 30px 10px;
-    padding: 10px;
+    padding: 20px 10px;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
     background-image: linear-gradient(-45deg, #fff, #def 20%, #bcd 20% 40%, #abc 40% 60%, #9ab 60% 80%, #fff 80% 100%);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
