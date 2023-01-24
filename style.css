@@ -184,7 +184,7 @@ header {
 }
 
 
-section h1 {
+section .title {
     margin-left: 20px;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -238,12 +238,16 @@ section .subtitle {
     overflow-x: auto;
     width: 100%;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: nowrap;
     scroll-snap-type: x mandatory;
     scroll-snap-stop: always;
 }
 
 .certification_list .certificate {
+    width: 88vw;
+    min-width: 88vw;
     margin: 10px;
     border-radius: 10px;
     padding: 10px;
@@ -254,10 +258,12 @@ section .subtitle {
 
 .certificate img {
     width: 100%;
+    margin-bottom: 10px;
 }
 
-.certificate .title {
-    font-size: 1em;
+.certificate .certificate_title a {
+    color: #123;
+    text-decoration: none;
 }
 
 ::-webkit-scrollbar {
