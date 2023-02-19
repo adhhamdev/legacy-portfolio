@@ -435,6 +435,22 @@ section .subtitle {
    color: #123;
  }
  
+ hr {
+   width: 40%;
+   height: 5px;
+   margin: 20px auto;
+   border-radius: 10px;
+   border: none;
+   background: #456;
+ }
+ 
+ footer {
+   padding: 20px;
+   color: #123;
+   text-align: center;
+   background-color: #eee;
+ }
+ 
 @keyframes fadeIn {
     from {scale: 0; opacity: 0;}
     to {scale: 1; opacity: 1;}
