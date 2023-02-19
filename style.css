@@ -349,6 +349,92 @@ section .subtitle {
    background-color: #123;
  }
  
+ .education {
+   margin-top: 100px;
+   padding: 0 5px;
+ }
+ 
+ .education .slide {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin: 20px auto;
+   border-radius: 10px;
+   padding: 0 8px;
+ }
+ 
+ .slide img {
+   border-radius: 20px;
+   box-shadow: 0 0 10px 1px rgba(0, 0, 0, .3);
+ }
+ 
+ .education .subtitle{
+   padding: 0 20px;
+   font-size: 0.9em;
+ }
+ 
+ .feedback {
+   margin-top: 100px;
+ }
+ 
+ .feedback form {
+   margin: 20px auto;
+   border-radius: 10px;
+   padding: 10px;
+   color: #fff;
+   box-shadow: 0 0 10px 1px rgba(0, 0, 0, .3);
+   background-image: linear-gradient(45deg, #123, royalblue);
+ }
+ 
+ .feedback form fieldset {
+   width: 90%;
+   margin: 10px auto;
+   border: 2px solid #abc;
+   border-radius: 5px;
+ }
+  .feedback form fieldset:hover {
+    border-color: #fff;
+  }
+ 
+ .feedback form legend {
+   margin-left: 5px;
+   padding: 0 5px;
+   font-weight: bold;
+ }
+ 
+ 
+ .feedback input, .feedback textarea {
+   width: 100%;
+   outline: none;
+   border: none;
+   padding: 10px;
+   font-size: 1.1em;
+   color: #eee;
+   background: transparent;
+ }
+ 
+ .feedback input::placeholder, .feedback textarea::placeholder {
+   color: #abc;
+ }
+ 
+ .feedback button {
+   display: block;
+   width: 90%;
+   margin: 20px auto;
+   border-radius: 30px;
+   border: 2px solid #fff;
+   padding: 10px;
+   color: #fff;
+   font-weight: bold;
+   font-size: 1.1em;
+   font-family: Poppins, Arial, Helvetica, sans-serif;
+   background: transparent;
+ }
+ .feedback button:hover {
+   background: #fff;
+   color: #123;
+ }
+ 
 @keyframes fadeIn {
     from {scale: 0; opacity: 0;}
     to {scale: 1; opacity: 1;}
