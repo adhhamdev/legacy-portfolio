@@ -271,6 +271,7 @@ section .subtitle {
 }
 
 .certificate .certificate_title a {
+  padding: 5px;
 	color: #123;
 	text-decoration: none
 }
