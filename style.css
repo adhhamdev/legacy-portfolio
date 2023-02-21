@@ -460,6 +460,12 @@ footer {
 	background-color: #eee
 }
 
+footer a {
+  display: inline-block;
+  margin: 10px auto;
+  color: #567;
+}
+
 @keyframes fadeIn {
 	from {
 		opacity: 0
