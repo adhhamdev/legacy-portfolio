@@ -417,12 +417,12 @@ section .subtitle {
 	padding: 10px;
 	font-size: 1.1em;
 	color: #eee;
-	background: 0 0
+	background: transparent;
 }
 
 .feedback input::placeholder,
 .feedback textarea::placeholder {
-	color: #abc
+	color: #abc;
 }
 
 .feedback button {
@@ -436,7 +436,7 @@ section .subtitle {
 	font-weight: 700;
 	font-size: 1.1em;
 	font-family: Poppins, Arial, Helvetica, sans-serif;
-	background: 0 0
+	background: transparent;
 }
 
 .feedback button:hover {
@@ -450,14 +450,14 @@ hr {
 	margin: 20px auto;
 	border-radius: 10px;
 	border: none;
-	background: #456
+	background: #456;
 }
 
 footer {
 	padding: 20px;
 	color: #123;
 	text-align: center;
-	background-color: #eee
+	background-color: #eee;
 }
 
 footer a {
@@ -477,5 +477,5 @@ footer a {
 }
 
 ::-webkit-scrollbar {
-	display: none
+	display: none;
 }
