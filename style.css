@@ -466,6 +466,27 @@ footer a {
   color: #567;
 }
 
+/* 404 */
+.pnf-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #456;
+}
+
+.pnf-container h1 {
+  font-family: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
+  color: #001;
+}
+
+.pnf-container a {
+  font-weight: bold;
+  color: #123;
+}
+
 @keyframes fadeIn {
 	from {
 		opacity: 0

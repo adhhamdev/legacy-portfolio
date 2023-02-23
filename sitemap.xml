@@ -14,6 +14,11 @@
 			<loc>https://adhhamdev.netlify.app/assets/images/fcc-responsive-web-design.jpeg</loc>
 			<changefreq>monthly</changefreq>
 		</url>
+		
+		<url>
+		  <loc>https://adhhamdev.netlify.app/404.html</loc>
+		  <changefreq>never</changefreq>
+		</url>
 
 	</urlset>
 
