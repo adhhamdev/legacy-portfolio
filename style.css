@@ -203,11 +203,10 @@ header {
 
 .intro .intro_txt {
 	margin: 10px;
-	border-left: 2px solid #123;
-	border-bottom: 5px solid #123;
-	border-radius: 20px;
-	padding: 20px;
-	background-image: linear-gradient(45deg, #fff 50%, #eee 50%);
+	border-left: 8px solid #123;
+	border-radius: 5px 20px 20px 5px;
+	padding: 10px 20px;
+	text-align: justify;
 }
 
 .intro h3 {
