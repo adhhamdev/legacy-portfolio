@@ -15,9 +15,11 @@ let menuActive;
 menuBtn.addEventListener('click', () => {
   if(menubar.style.opacity == '1'){
   menubar.style = 'opacity: 0; top: -400px';
+  menuBtn.querySelector('i').className = 'fas fa-bars';
 
 }else{
   menubar.style = 'opacity: 1; top: 55px;';
+  menuBtn.querySelector('i').className = 'fas fa-arrow-up';
 }
 });
 
