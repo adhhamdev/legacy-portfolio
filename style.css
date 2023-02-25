@@ -67,7 +67,6 @@ header {
 	font-size: 1.1em;
 	background-color: transparent;
 	box-shadow: 1px 2px 4px 1px rgb(0, 0, 0, .3);
-	cursor: pointer;
 }
 
 .menuBtn:active {
@@ -85,8 +84,8 @@ header {
 
 .menubar {
   position: fixed;
-  top: -400px;
-  right: 4px;
+  top: 55px;
+  right: -200px;
   display: grid;
   border-radius: 0 0 10px 10px;
   padding: 5px;
@@ -111,7 +110,7 @@ header {
   background-color: #000;
 }
 
-.menubar a {
+.menubar a, .menubar button {
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -120,15 +119,30 @@ header {
   color: #123;
   font-weight: bold;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  cursor: default
 }
-.menubar a:hover {
+.menubar a:hover, .menubar button:hover {
   color: #fff;
   background-color: #234;
 }
 
-.menubar a i {
+.menubar button {
+  border: none;
+  font-size: 1em;
+  background: transparent;
+}
+
+.menubar a i, .menubar button i {
   width: 30px;
   font-size: 1.2em;
+}
+
+.menubar button:disabled {
+  color: #aaa;
+}
+.menubar button:disabled:hover {
+  color: #aaa;
+  background: none;
 }
 
 .fader {
@@ -447,18 +461,19 @@ section .subtitle {
 	padding: 10px;
 	color: #fff;
 	box-shadow: 0 0 10px 1px rgb(0, 0, 0, .3);
-	background-image: linear-gradient(45deg, #123, #4169e1)
+	background-image: linear-gradient(135deg, #001, #123, #234);
+	background-image: linear-gradient(135deg, #456, #123);
 }
 
 .feedback form fieldset {
 	width: 90%;
 	margin: 10px auto;
-	border: #abc solid 2px;
+	border: 2px solid #abc;
 	border-radius: 5px
 }
 
-.feedback form fieldset:hover {
-	border-color: #fff
+.feedback form fieldset:focus-within {
+	border-color: #fff;
 }
 
 .feedback form legend {
@@ -474,13 +489,18 @@ section .subtitle {
 	border: none;
 	padding: 10px;
 	font-size: 1.1em;
-	color: #eee;
+	font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #fff;
 	background: transparent;
 }
 
 .feedback input::placeholder,
 .feedback textarea::placeholder {
 	color: #abc;
+}
+
+.feedback input:invalid, .feedback textarea:invalid {
+  color: #f06;
 }
 
 .feedback button {
