@@ -82,7 +82,7 @@ header {
 .menubar h2 {
   margin-top: 20px;
   text-align: center;
-  font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: QuicksandmatchMedia('(min-width: 768px) and (orientation: landscape)'), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .menubar hr {
