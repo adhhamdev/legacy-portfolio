@@ -103,7 +103,7 @@ header {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   cursor: default
 }
-.menubar a:hover, .menubar button:hover {
+.menubar a:hover{
   color: #fff;
   background-color: #234;
 }
@@ -121,10 +121,6 @@ header {
 
 .menubar button:disabled {
   color: #aaa;
-}
-.menubar button:disabled:hover {
-  color: #aaa;
-  background: none;
 }
 
 .fader {
@@ -339,7 +335,7 @@ section .subtitle {
 	border-radius: 10px;
 	padding: 5px;
 	box-shadow: 1px 2px 6px 1px rgb(0, 0, 0, .3);
-	background: #fff
+	background: transparent;
 }
 
 .project summary {
@@ -560,6 +556,72 @@ footer a {
 
 ::-webkit-scrollbar {
 	display: none;
+}
+
+/* DARK MODE */
+.dark, .dark header {
+  color: #fff;
+  background-color: #123;
+}
+.dark header {
+  box-shadow: 0 2px 20px 1px rgba(255, 255, 255, 0.3);
+}
+.dark header .menuBtn{
+  color: #fff;
+  box-shadow: 1px 2px 4px 1px rgb(255, 255, 255, .3);
+}
+.dark .menubar {
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: -1px 2px 10px 1px rgba(255, 255, 255, 0.3);
+}
+.dark .menubar a, .dark .menubar button {
+  color: #fff;
+}
+.dark .menubar a:hover {
+  color: #000;
+  background: #aff;
+}
+.dark .menubar hr {
+  background-color: #abc;
+}
+.dark .profile img {
+  border-color: #123;
+}
+.dark .title {
+  background-image: linear-gradient(45deg, #abc, #fff);
+}
+.dark .intro h3 {
+  color: #abc;
+}
+.dark .intro .intro_txt {
+  border-left-color: #eee;
+}
+.dark .intro {
+  border-left-color: #eee;
+}
+.dark .tech_list figcaption {
+  color: #000;
+}
+.dark .certificate {
+  background-image: linear-gradient(135deg, #456 50%, #000 50%)
+}
+.dark .certificate a {
+  color: #fff;
+}
+.dark .project {
+  box-shadow: 1px 2px 6px 1px rgb(255, 255, 255, .3);
+}
+.dark .project summary {
+  color: #000;
+  background-color: #fff;
+}
+.dark .project a {
+  color: #fff;
+  border-color: #fff;
+}
+.dark .project a:hover {
+  color: #000;
+  background-color: #fff;
 }
 
 /* MEDIA */

@@ -15,13 +15,14 @@ window.addEventListener('DOMContentLoaded', () => {
     faders.forEach(fader => observer.observe(fader));
     
     menuBtn.onclick = () => {
+      const menuIcon = menuBtn.querySelector('i');
       if (menubar.style.opacity == '1') {
         menubar.style = 'opacity: 0; right: -200px';
-        menuBtn.querySelector('i').className = 'fas fa-bars';
+        menuIcon.className = 'fas fa-bars';
     
       } else {
         menubar.style = 'opacity: 1; right: 4px;';
-        menuBtn.querySelector('i').className = 'fas fa-arrow-right';
+        menuIcon.className = 'fas fa-arrow-right';
       }
     }
     
@@ -41,7 +42,12 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     
     themeBtn.onclick = () => {
-      document.body.style = 
-      `background: #234;`;
+      if(document.body.classList.contains('dark')){
+        document.body.className = '';
+        themeBtn.style = 'background-color: transparent';
+        } else {
+          themeBtn.style = 'background-color: #0ea';
+          document.body.className = 'dark';
+        }
     }
 });
