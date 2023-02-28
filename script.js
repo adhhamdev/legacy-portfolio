@@ -51,3 +51,22 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+const filePicker = document.querySelector('#file');
+const fileBtn = document.querySelector('.fileBtn');
+const filePreview = document.querySelector('.selected-file');
+
+fileBtn.onclick = () => {
+  filePicker.click();
+}
+filePicker.onchange = (ev) => {
+  const file = ev.target.files[0];
+  let type = file.type;
+  let icon;
+  if(type.includes('image')) icon = 'image';
+  else if(type.includes('video')) icon = 'video';
+  else if(type.includes('audio')) icon = 'music';
+  else icon = 'file';
+  filePreview.innerHTML =
+  `<div class='file'><i class="fas fa-${icon}"></i> <p>${file.name}</p></div>`;
+}

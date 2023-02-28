@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hi, it's Adhham. I am a self-learning Full Stack Web Developer since 2019 and I'm a student at ESoft Metro Campus too, studying Information Technology moving on with my career.">
     <meta name="keywords" content="Adhham, Web Developer, Full Stack Web Developer, Coding, Information Technology, Computer Science, Sri Lanka, Self-learner">
+    <meta name="theme-color" content="#789">
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://adhhamdev.netlify.app">
@@ -232,7 +233,9 @@
             </fieldset>
             <fieldset class="fader">
               <legend>Attachment (Optional)</legend>
-              <input type="file" name="file" id="file" multiple download>
+              <input type="file" name="file" id="file" hidden>
+              <button class="fileBtn" type="button">Browse</button>
+              <div class="selected-file"></div>
             </fieldset>
             <button class="fader" type="submit">Submit</button>
           </form>
