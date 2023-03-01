@@ -32,10 +32,13 @@ window.addEventListener('DOMContentLoaded', () => {
         menuBtn.querySelector('i').className = 'fas fa-bars';
       }}
     
-    if('share' in navigator) {
+    if(navigator.share) {
       shareBtn.onclick = () => {
-        const share = navigator.share('https://adhhamdev.netlify.app');
-        console.log(share)
+        navigator.share({
+          title: 'Share Portfolio',
+          text: 'Adhham | Full Stack Web Developer',
+          url: 'https://adhhamdev.netlify.app'
+        });
       }
     } else {
       shareBtn.disabled = true;
