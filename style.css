@@ -131,12 +131,13 @@ header {
 
 .home .profile {
 	position: relative;
-	height: 50vw;
+	height: 250px;
 	margin: 70px 10px;
 	border-radius: 20px;
-	background-image: url(https://adhhamdev.netlify.app/assets/images/laptop.jpg);
+	background-image: url(images/laptop.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background: #123;
 }
 
 .profile h1,
@@ -674,13 +675,12 @@ footer a {
     display: none;
   }
   .home .profile {
-    margin: 80px 30px;
+    margin: 100px 30px 70px 30px;
     float: left;
-    height: 15vh;
     width: 40vw
   }
   .intro {
-    margin: 120px auto;
+    margin: 90px 20px 50px 10px;
     width: 50vw;
     float: right
   }
@@ -696,6 +696,17 @@ footer a {
   }
   .projects_list .project summary {
     padding: 20px;
+  }
+  .feedback form {
+    margin: 40px auto 0 auto;
+    width: 80%;
+  }
+  .feedback form fieldset {
+    margin: 20px auto;
+    width: 80%;
+  }
+  .feedback button[type=submit] {
+    width: 50%;
   }
 }
 @media (max-width:380px) {
