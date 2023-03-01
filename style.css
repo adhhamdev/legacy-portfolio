@@ -134,10 +134,9 @@ header {
 	height: 250px;
 	margin: 70px 10px;
 	border-radius: 20px;
-	background-image: url(images/laptop.jpg);
+	background-image: url(assets/images/laptop.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background: #123;
 }
 
 .profile h1,
