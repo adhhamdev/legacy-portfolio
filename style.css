@@ -526,12 +526,6 @@ section .subtitle {
   margin-right: 10px;
 }
 
-.feedback .file p {
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-  width: 70vw;
-}
-
 hr {
 	width: 40%;
 	height: 5px;
