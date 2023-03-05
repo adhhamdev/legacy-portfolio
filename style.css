@@ -537,15 +537,13 @@ hr {
 
 footer {
 	padding: 20px;
-	color: #fff;
 	text-align: center;
-	background-color: #001;
 }
 
 footer a {
   display: inline-block;
   margin: 10px auto;
-  color: #def;
+  color: #678;
 }
 
 /* 404 */
