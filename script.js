@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
     menuBtn.onclick = () => {
       const menuIcon = menuBtn.querySelector('i');
       if (menubar.style.opacity == '1') {
-        menubar.style = 'opacity: 0; right: -200px';
+        menubar.style = 'opacity: 0; right: -100%';
         menuIcon.className = 'fas fa-bars';
     
       } else {
