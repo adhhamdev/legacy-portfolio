@@ -132,7 +132,7 @@ header {
 .home .profile {
 	position: relative;
 	height: 250px;
-	margin: 10px;
+	margin: 70px 10px;
 	border-radius: 20px;
 	background-image: url(assets/images/laptop.jpg);
 	background-repeat: no-repeat;
